@@ -1,0 +1,5 @@
+following Youtube tutorial:
+https://www.youtube.com/watch?v=D3CDmRjPdcE
+to run hellow world through the termal using:
+
+node HelloWorld.js
