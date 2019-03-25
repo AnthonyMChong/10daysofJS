@@ -1,0 +1,8 @@
+similar to python def, "function" must be declared at the declaration of a function
+
+function expression
+
+you can do unnamed functions 
+var square = function(x) {
+        return x * x;
+    };
