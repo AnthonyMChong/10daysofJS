@@ -1,0 +1,29 @@
+https://www.hackerrank.com/challenges/js10-arithmetic-operators/topics
+
+unary operator requires a single operand,
+
+A binary operator requires two operands
+
+There is one ternary operator, the conditional operators
+
+** is exponentiation
+
+!== operands are not equal OR do not share the same type
+
+The following six values are known as Falsy values, meaning they evaluate to false:
+
+false
+undefined
+null
+0
+NaN
+"" (i.e., the empty string)
+
+ternary operator:
+condition ? trueStatement : falseStatement
+
+you can read the "?" as a then
+
+let keyword can have Block Scope.
+
+Variables declared inside a block {} can not be accessed from outside the block:
