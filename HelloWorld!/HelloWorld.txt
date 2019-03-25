@@ -1,0 +1,9 @@
+https://www.hackerrank.com/challenges/js10-hello-world/problem
+
+This text file will act a the notes page
+
+A literal is a data value that appears directly in a program ie a fixed value
+
+semicolons are optional!
+
+identifiers, or as i know them... variable names can begin with a letter '_' or '$'

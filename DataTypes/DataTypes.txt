@@ -1,0 +1,21 @@
+https://www.hackerrank.com/challenges/js10-data-types/topics
+
+Notes:
+
+Strings are immutable in javascript... we have to copy to change them
+
+declare variables with var
+the type will change based on the literal assigned to the var
+
+Coercion:
+If you add a number and a string, the number is coerced to a string.
+If you add a boolean and a string, the boolean is coerced to a string.
+If you add a number and a boolean, the boolean is coerced to a number.
+
+readline gets strings not the original data type... how do we cast?
+Number() and String()
+
+the goal of this exercise is to:
+print the sum of firstInteger and secondInteger
+print the sum of firstDecimal and secondDecimal
+print the concatenation of firstString and secondString
