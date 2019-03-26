@@ -1,0 +1,16 @@
+new loops i dont know:
+do-while
+do {
+    statement(s);
+} while (condition);
+
+ the loop will always run at least once
+ once do is done, condition will be checked
+
+ for (var variable in object) {
+    // insert code that uses variable here
+}
+
+for (let variable of iterable) {
+    statement(s);
+}
