@@ -1,0 +1,5 @@
+var declares globaly in the function
+
+let declares in the scope of the block
+
+const creates a read only reference. not reassignable!
