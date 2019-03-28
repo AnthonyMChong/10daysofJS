@@ -1,0 +1,38 @@
+you can loop over an array with .foreach()
+
+var a = ['first', 'second'];
+
+a.forEach(function(e, i, array) {
+    // 'i' is the index
+    // 'e' is the element
+    console.log(i + ' ' + e);
+});
+
+you can .push("item") to append to an array
+
+.pop() to remove from end
+.shift() from the front
+.unshift("item") to add to the front
+
+.indexOf('item') 
+
+remove an item by indexlet position = 1;
+let elementsToRemove = 2;
+// Remove 'elementsToRemove' element(s) starting at 'position'
+a.splice(position, elementsToRemove);
+SPLICE
+
+copy an array
+.slice()
+
+sorting is like python
+.sort()
+
+also how to iterate over array
+
+var a = ['first', 'second', 'third', 'fourth'];
+
+for (let e of a) {
+    console.log('e:', e);
+}
+
