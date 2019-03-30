@@ -33,7 +33,19 @@ function reverseString(s) {
  * If 'a' is negative, throw an Error with the message "Negative Error"
  */
 function isPositive(a) {
-    return a
+    try {
+        if (a > 0) {
+            return "YES";
+        } else if (a == 0) {
+            throw "Zero Error"
+        } else {
+            throw "Negative Error"
+        }
+    }
+    catch (e) {
+        return e
+    }
+    
 }
 
 
@@ -44,3 +56,6 @@ console.log(getSecondLargest(a));
 var s = "reverseme"
 reverseString(s)
 reverseString(1234)
+console.log(isPositive(-2))
+console.log(isPositive(0))
+console.log(isPositive(11))
