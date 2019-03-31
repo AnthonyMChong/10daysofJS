@@ -36,3 +36,4 @@ for (let e of a) {
     console.log('e:', e);
 }
 
+https://www.hackerrank.com/challenges/js10-arrays/problem

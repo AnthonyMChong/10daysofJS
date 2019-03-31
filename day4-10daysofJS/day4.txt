@@ -1,0 +1,18 @@
+Bracket Notation: Call objectName['propertyName'] good when attricute is not known... dynamic!
+
+var actor = {
+    Name: 'Julia Roberts', 
+    Age: 36
+};
+
+object example
+var o = {a, b, c};
+object initializer
+
+function Actor(firstName, lastName, Age) {
+    this.firstName = firstName;
+    this.lastName = lastName;
+    this.Age = Age;
+}
+
+var a1 = new Actor('Julia', 'Roberts', 48);
