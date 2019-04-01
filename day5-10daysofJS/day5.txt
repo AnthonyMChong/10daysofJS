@@ -1,0 +1,20 @@
+Fruit.prototype.getInformation = function() {
+    return 'This ' + this.type + ' is ' + this.color + '.';
+}
+
+prototypes allow methods and properties to be accesses by all instances of the fucntion
+
+function declarations are "hoisted" as in can be referenced before they are declared
+
+
+example of a class with a constructor
+class Polygon {
+    constructor(height, width) {
+        this.height = height;
+        this.width = width;
+    }
+    getArea() {
+        return this.height * this.width;
+    }
+}
+
