@@ -31,6 +31,11 @@ function sides(literals, ...expressions) {
     return (exparray.sort());
 }
 
+function modifyArray(nums) {
+    const modar = nums.map((curnum) => (curnum % 2) ? (curnum * 3) : (curnum * 2));
+    return modar;
+}
+
 
 /*
  * Create a Square class that inherits from Rectangle and implement its class constructor
@@ -47,6 +52,7 @@ let s2 = 14;
 console.log(sqr.area());
 const [x, y] = sides`The area is: ${s1 * s2}.\nThe perimeter is: ${2 * (s1 + s2)}.`;
 console.log([x,y])
+console.log(modifyArray([1,2,3,4,5]))
 
 
 // if (JSON.stringify(Object.getOwnPropertyNames(Square.prototype)) === JSON.stringify([ 'constructor' ])) {
