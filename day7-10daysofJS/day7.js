@@ -74,8 +74,8 @@ const numberstringre = regexNum();
 // console.log(titlere.test(title6))
 // console.log(titlere.test(title7))
 
-numberstring = "1232 and 121"
-numberstring1 = "and"
+var numberstring = "1232 and 121"
+var numberstring1 = "and"
 
 console.log(numberstringre.test(numberstring))
 console.log(numberstringre.test(numberstring1))
