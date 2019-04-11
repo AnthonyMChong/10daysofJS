@@ -1,0 +1,20 @@
+body {
+    text-align: center;
+}
+/* Styling for the 'button' class */
+.button {
+    background-color: #4FFF8F;
+}
+/* Styling for id='htmlButton1' */
+#htmlButton1 {
+    font-weight: bold;
+}
+/* Styling for id='htmlButton2' */
+#htmlButton2 {
+    font-style: italic;
+}
+/* Styling for id='jsButton' */
+#jsButton {
+    font-weight: bold;
+    font-style: italic;
+}
