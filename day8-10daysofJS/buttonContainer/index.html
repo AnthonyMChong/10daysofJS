@@ -1,22 +1,25 @@
-<!-- Enter your HTML code here -->
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="utf-8">
-        <title>Buttons Grid</title>
-    </head>
-    <body>
-    </body>
-</html>
 
-
-<!DOCTYPE html>
-<html>
-    <head>
-    <meta charset="utf-8">
-    <title>Buttons Grid</title>
-
-    <link rel="stylesheet" href="css/buttonGrid.css" type="text/css">
+    <!-- <link rel="stylesheet" href="css/buttonGrid.css" type="text/css"> -->
+    <style>
+            /* Style for the 'buttonContainer' class */
+            .buttonContainer {
+                width: 75%;
+            }
+            /* Style for 'buttonClass' elements inside a 'buttonContainer' 
+        
+                We can think of the '>' combinator as a sort of binary operator:
+                the syntax 'parent > child' specifies that we're selecting ONLY 
+                elements of type 'child' that are within elements of type 'parent'. 
+            */
+            .buttonContainer > .buttonClass {
+                    width: 30%;
+                    height: 48px;
+                    font-size: 24px;
+            }
+        </style>
 
     </head>
     <body>
