@@ -1,0 +1,103 @@
+/* Style for the 'buttonContainer' class */
+.buttonContainer {
+    width: 33%;
+}
+/* Style for 'buttonClass' elements inside a 'buttonContainer' 
+
+    We can think of the '>' combinator as a sort of binary operator:
+    the syntax 'parent > child' specifies that we're selecting ONLY 
+    elements of type 'child' that are within elements of type 'parent'. 
+    has a background-color of lightgray, a border that is solid, a height of 48px, and a font-size of 20px.
+    btn0 and btn1 have a background-color of lightgreen and a color of brown.
+
+    All the buttons in btns have a width of 25%, a height of 36px, a font-size of 18px, margin of 0px, and float value left.
+*/
+#res {
+    background-color: lightgray;
+    border: solid;
+    height: 48px;
+    font-size: 20px;
+}
+
+#btn0 {
+    background-color: lightgreen;
+    color: brown;
+    height: 36px;
+    width: 25%;
+    float: left;
+    margin: 0px;
+    font-size: 18px;
+}
+#btn1 {
+    background-color: lightgreen;
+    color: brown;
+    height: 36px;
+    width: 25%;
+    float: left;
+    margin: 0px;
+    font-size: 18px;
+}
+
+#btnClr{
+    background-color: darkgreen;
+    color: white;
+    height: 36px;
+    width: 25%;
+    float: left;
+    margin: 0px;
+    font-size: 18px;
+}
+
+#btnEql{
+    background-color: darkgreen;
+    color: white;
+    height: 36px;
+    width: 25%;
+    float: left;
+    margin: 0px;
+    font-size: 18px;
+}
+
+#btnSum {
+    background-color: black;
+    color: red;
+    height: 36px;
+    width: 25%;
+    float: left;
+    margin: 0px;
+    font-size: 18px;
+}
+#btnSub {
+    background-color: black;
+    color: red;
+    height: 36px;
+    width: 25%;
+    float: left;
+    margin: 0px;
+    font-size: 18px;
+}
+#btnMul {
+    background-color: black;
+    color: red;
+    height: 36px;
+    width: 25%;
+    float: left;
+    margin: 0px;
+    font-size: 18px;
+}
+#btnDiv {
+    background-color: black;
+    color: red;
+    height: 36px;
+    width: 25%;
+    float: left;
+    margin: 0px;
+    font-size: 18px;
+}
+
+
+.buttonContainer > .buttonClass {
+        width: 30%;
+        height: 48px;
+        font-size: 24px;
+}
