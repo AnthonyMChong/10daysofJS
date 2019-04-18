@@ -1,6 +1,6 @@
 /* Style for the 'buttonContainer' class */
 .buttonContainer {
-    width: 33%;
+    width: 100%;
 }
 /* Style for 'buttonClass' elements inside a 'buttonContainer' 
 
@@ -12,6 +12,10 @@
 
     All the buttons in btns have a width of 25%, a height of 36px, a font-size of 18px, margin of 0px, and float value left.
 */
+#calc{
+    width: 33%;
+}
+
 #res {
     background-color: lightgray;
     border: solid;
