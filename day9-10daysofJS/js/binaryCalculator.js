@@ -1,9 +1,8 @@
-import * as bM from '/binMath.js';
 
 var result = document.getElementById('res');
 var resultValue = "beep boop"
 
-var testParse = ["10","*" , "010" , "+" , "5"]
+var testParse = ["10","*" , "010" , "+" , "101"]
 var operationOrder = ["*","/","+","-"]
 
 function elementAction(e) {
@@ -37,12 +36,42 @@ function stringToEq (eqArray){
     }
 }
 
+function stringToEq (eqArray){
+    console.log(eqArray)
+    let comp1 = parseInt(eqArray[0], 2);
+    let comp2 = parseInt(eqArray[2], 2);
+    switch(eqArray[1]){
+        case "+":
+            return comp1 + comp2;
+        case "-":
+            return comp1 - comp2;
+        case "*":
+            return comp1 * comp2;
+        case "/":
+            return comp1 / comp2;
+        default:
+            return 0
+    }
+}
+
+
+function intToBin (binInt){
+    return binInt.toString(2)
+}
+
 function executeMath( componentArray ){
     // result.innerHTML=resultValue
     for (op in operationOrder){
-        var subOp = componentArray.indexOf(op)
+        var subOp = componentArray.indexOf(operationOrder[op])
+        console.log(componentArray)
         while (subOp != -1){
-            componentArray.splice(subOp -1 , subOp + 1)
+            let el1 = componentArray[subOp-1]
+            let operation = componentArray[subOp]
+            let el2 = componentArray[subOp+1]
+            componentArray[subOp] = intToBin(stringToEq([el1 , operation , el2 ]))
+            componentArray.splice(subOp -1 ,1)
+            componentArray.splice(subOp ,1 )
+            console.log(componentArray)
             subOp = componentArray.indexOf(op)
         }
     }
