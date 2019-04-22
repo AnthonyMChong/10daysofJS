@@ -70,7 +70,7 @@ function executeMath( componentArray ){
             let el2 = componentArray[subOp+1]
             componentArray[subOp] = intToBin(stringToEq([el1 , operation , el2 ]))
             componentArray.splice(subOp -1 ,1)
-            componentArray.splice(subOp ,1 )
+            componentArray.splice(subOp , 1 )
             console.log(componentArray)
             subOp = componentArray.indexOf(op)
         }
