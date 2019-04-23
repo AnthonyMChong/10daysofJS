@@ -22,7 +22,8 @@ function intToBin (binInt){
 }
 
 function getEquationInts(equation){
-    return equation.split(/[\*\/\+\-]/)
+    // return equation.split(/[\*\/\+\-]/) #((?<=;)|(?=;))
+    return equation.split(/(?<=[\*\/\+\-])|(?=[\*\/\+\-])/)
 }
 
 // testeq = ["1101" , "+" , "0001"]
