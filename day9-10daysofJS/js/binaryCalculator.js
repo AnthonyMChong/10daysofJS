@@ -54,6 +54,11 @@ function stringToEq (eqArray){
     }
 }
 
+function getEquationInts(equation){
+    // return equation.split(/[\*\/\+\-]/) #((?<=;)|(?=;))
+    let splitequation = equation + ''
+    return splitequation.split(/(?<=[\*\/\+\-])|(?=[\*\/\+\-])/)
+}
 
 function intToBin (binInt){
     return binInt.toString(2)
@@ -61,9 +66,9 @@ function intToBin (binInt){
 
 function executeMath( componentArray ){
     // result.innerHTML=resultValue
+    console.log(componentArray)
     for (op in operationOrder){
         var subOp = componentArray.indexOf(operationOrder[op])
-        console.log(componentArray)
         while (subOp != -1){
             let el1 = componentArray[subOp-1]
             let operation = componentArray[subOp]
@@ -80,7 +85,8 @@ function executeMath( componentArray ){
 
 function execAction(e){
     // result.innerHTML=resultValue
-    result.innerHTML = executeMath (testParse)
+    let ourResult = executeMath (getEquationInts(result.innerHTML))
+    result.innerHTML = ourResult
 }
 
 
