@@ -4,40 +4,22 @@ function vowelsAndConsonants(s) {
     // console.log(s)
     for (let letter in s){//in javascript strings are iterable
         let currentletter = s.charAt(letter);
-        if ( currentletter == "a"){
+        if ( /[aeiouAEIOU]/.test(currentletter)){
             vowels = vowels.concat(currentletter);
         }
         else{
             constinents = constinents.concat(currentletter);
         }
     } 
-    // for (let sindex = 0 ; sindex < s.length ; sindex++){
-    //     var l = s.charAt(sindex);
-    //     if (l =="a" || l =="e" || l =="i" || l =="o" || l =="u"||l =="A" || l =="E" || l =="I" || l =="O" || l =="U"){
-    //         if (vowels){
-    //             vowels = vowels.concat(l);
-    //         }
-    //         else{
-    //             vowels = l;
-    //         }
-    //     }
-    //     else{
-    //         if (constinents){
-    //             constinents = constinents.concat(l);
-    //         }
-    //         else{
-    //             constinents = l;
-    //         }
-    //     }
-    // }
+
     var ordereds = vowels.concat(constinents);
-    // for (var o = 0 ; o < ordereds.length; o++){
-    //     console.log(ordereds.charAt(o))
+    // for (orderindex = 0; orderindex < ordereds.length ; orderindex++){
+    //     console.log(ordereds.charAt(orderindex));
     // }
     for (let o in ordereds){
         console.log(ordereds.charAt(o))
     }
-    // console.log(ordereds)
+
 }
 
 function getGrade(score) {
@@ -65,33 +47,25 @@ function getGrade(score) {
 }
 
 function getLetter(s) {
-    let letter;
-    let firstletter = s.charAt(0)
-    // Write your code here
-    switch (firstletter) {
-        case "a":
-        case "e":
-        case "i":
-        case "o":
-        case "u":
+    var letter;
+    var firstletter = s.charAt(0)
+    console.log(firstletter)
+    switch (true) {
+        case /[aeiou]/.test(firstletter):
             letter = "A";
             break;
-        case "b":
-        case "c":
-        case "d":
-        case "f":
-        case "g":
+        case /[bcdfg]/.test(firstletter):
             letter = "B";
             break;
-        case "h":
-        case "j":
-        case "k":
-        case "l":
-        case "m":
+        case /[hjklm]/.test(firstletter):
             letter = "C";
             break;
-        default:
+        case /[npqrstvwxyz]/.test(firstletter):
             letter = "D"
+            break;
+        default:    
+            console.log(/[aeiou]/.test(firstletter))
+            letter = "ERROR"
             break;
     }
 
@@ -100,5 +74,9 @@ function getLetter(s) {
 }
 
 // console.log(vowelsAndConsonants("javascriptloops"));
-vowelsAndConsonants("javascriptloops")
+// vowelsAndConsonants("javascriptloops")
+
+
+
+console.log(getLetter("adfgt"));
 // console.log(getGrade(7));
